@@ -9,6 +9,8 @@ function randomColor() {
   document.body.style.background = newColor;
 }
 
+setInterval(randomColor, 5000)
+
 randomColor()
 
-setInterval(randomColor, 5000)
+
