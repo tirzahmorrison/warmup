@@ -9,6 +9,6 @@ function randomColor() {
   document.body.style.background = newColor;
 }
 
-
+randomColor();
 
 
