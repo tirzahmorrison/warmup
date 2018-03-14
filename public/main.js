@@ -12,8 +12,9 @@
 //randomColor();
 
 let color = function randomColor() {
+  let letters = '0123456789ABCDEF'.split('');
   let color = '#';
-  for (var i = 0; i < 6; i++ ) {
+  for (let i = 0; i < 6; i++ ) {
       color = [Math.floor(Math.random() * 256)];
   }
   return color;
