@@ -1,8 +1,11 @@
-(function () {
-  const result = '#', i = 0;
-  while (i < 6) {
-  result += (Math.floor(Math.random()*16)).toString(16);
-  i++;
+function random_bg_color() {
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
+  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+console.log(bgColor);
+
+  document.body.style.background = bgColor;
   }
-  document.body.style.background = result;
-  })();
+
+random_bg_color();
