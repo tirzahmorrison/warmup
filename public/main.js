@@ -1,4 +1,4 @@
-//As a user I want my background color to change every five seconds
+//As a user I want my background color to change every two seconds
 function randomColor() {
   const r = Math.floor(Math.random() * 256)
   const b = Math.floor(Math.random() * 256)
@@ -9,7 +9,7 @@ function randomColor() {
   document.body.style.background = newColor;
 }
 
-setInterval(randomColor, 5000)
+setInterval(randomColor, 2000)
 
 randomColor()
 
