@@ -1,13 +1,26 @@
 //As a user I want my background color to change everytime I refresh the page
-function randomColor() {
-  window.setTimeout( "setbackground()", 5000); // 5000 milliseconds delay
-  const x = Math.floor(Math.random() * 256);
-  const y = Math.floor(Math.random() * 256);
-  const z = Math.floor(Math.random() * 256);
-  const newColor = "rgb(" + x + "," + y + "," + z + ")";
-console.log(newColor);
+//function randomColor() {
+  //const x = Math.floor(Math.random() * 256);
+  //const y = Math.floor(Math.random() * 256);
+  //const z = Math.floor(Math.random() * 256);
+  //const newColor = "rgb(" + x + "," + y + "," + z + ")";
+//console.log(newColor);
 
-  document.body.style.background = newColor;
+  //document.body.style.background = newColor;
+  //}
+
+//randomColor();
+
+const color = function randomColor() {
+  let color = '#';
+  for (var i = 0; i < 6; i++ ) {
+      color += [Math.floor(Math.random() * 16)];
   }
+  return color;
+}
 
-randomColor();
+const newColor = document.body.style.backgroundColor;
+
+setInterval(function() { 
+   newColor = color;
+}, 1000);
