@@ -11,15 +11,15 @@
 
 //randomColor();
 
-const color = function randomColor() {
+let color = function randomColor() {
   let color = '#';
   for (var i = 0; i < 6; i++ ) {
-      color += [Math.floor(Math.random() * 16)];
+      color = [Math.floor(Math.random() * 256)];
   }
   return color;
 }
 
-const newColor = document.body.style.backgroundColor;
+let newColor = document.body.style.backgroundColor;
 
 setInterval(function() { 
    newColor = color;
