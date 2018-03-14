@@ -8,4 +8,4 @@ console.log(newColor);
   document.body.style.background = newColor;
   }
 
-random_bg_color();
+randomColor();
