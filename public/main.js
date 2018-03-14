@@ -1,5 +1,5 @@
 //As a user I want my background color to change every two seconds
-const = randomColor() {
+const randomColor()=> {
   const r = Math.floor(Math.random() * 256)
   const b = Math.floor(Math.random() * 256)
   const g = Math.floor(Math.random() * 256)
