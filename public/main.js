@@ -1,11 +1,11 @@
-function random_bg_color() {
-  var x = Math.floor(Math.random() * 256);
-  var y = Math.floor(Math.random() * 256);
-  var z = Math.floor(Math.random() * 256);
-  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-console.log(bgColor);
+function randomColor() {
+  const x = Math.floor(Math.random() * 256);
+  const y = Math.floor(Math.random() * 256);
+  const z = Math.floor(Math.random() * 256);
+  const newColor = "rgb(" + x + "," + y + "," + z + ")";
+console.log(newColor);
 
-  document.body.style.background = bgColor;
+  document.body.style.background = newColor;
   }
 
 random_bg_color();
